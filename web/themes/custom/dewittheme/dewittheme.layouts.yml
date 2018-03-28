@@ -1,0 +1,9 @@
+tworows:
+  label: tworows
+  category: dewit layout
+  template: templates/layout/tworows
+  regions:
+    toprow:
+      label: toprow
+    bottomrow:
+      label: bottomrow

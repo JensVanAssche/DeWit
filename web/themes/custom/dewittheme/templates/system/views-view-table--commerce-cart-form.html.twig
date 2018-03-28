@@ -1,0 +1,138 @@
+{#
+/**
+ * @file
+ * Default theme implementation for displaying a view as a table.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ *   - class: HTML classes that can be used to style contextually through CSS.
+ * - title : The title of this group of rows.
+ * - header: The table header columns.
+ *   - attributes: Remaining HTML attributes for the element.
+ *   - content: HTML classes to apply to each header cell, indexed by
+ *   the header's key.
+ *   - default_classes: A flag indicating whether default classes should be
+ *     used.
+ * - caption_needed: Is the caption tag needed.
+ * - caption: The caption for this table.
+ * - accessibility_description: Extended description for the table details.
+ * - accessibility_summary: Summary for the table details.
+ * - rows: Table row items. Rows are keyed by row number.
+ *   - attributes: HTML classes to apply to each row.
+ *   - columns: Row column items. Columns are keyed by column number.
+ *     - attributes: HTML classes to apply to each column.
+ *     - content: The column content.
+ *   - default_classes: A flag indicating whether default classes should be
+ *     used.
+ * - responsive: A flag indicating whether table is responsive.
+ * - sticky: A flag indicating whether table header is sticky.
+ *
+ * @see template_preprocess_views_view_table()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="row small-page-title">
+    <div class="col">
+        <h1>Winkelwagen</h1>
+        <img src="../../sites/default/files/orange_underline.png">
+    </div>
+</div>
+<div class="row" id="cart-nav">
+    <div class="col-lg-2 col-md-4 col-6 active">
+        <h2>1. Winkelwagen</h2>
+    </div>
+    <div class="col-lg-2 col-md-4 col-6">
+        <h2>2. Afrekenen</h2>
+    </div>
+    <div class="col-lg-2 col-md-4 col-6">
+        <h2>3. Verzending</h2>
+    </div>
+    <div class="col-lg-2 col-md-4 col-6">
+        <h2>4. Bestelling controleren</h2>
+    </div>
+    <div class="col-lg-2 col-md-4 col-6">
+        <h2>5. Betaling</h2>
+    </div>
+    <div class="col-lg-2 col-md-4 col-6">
+        <h2>6. Afrekening voltooid</h2>
+    </div>
+</div>
+<div class="row" id="cart-heading">
+    <div class="col-2">
+        <h2>PRODUCT</h2>
+    </div>
+    <div class="col-3">
+        <h2>BESCHRIJVING</h2>
+    </div>
+    <div class="col-2">
+        <h2>FORMAAT</h2>
+    </div>
+    <div class="col-1">
+        <h2>PRIJS</h2>
+    </div>
+    <div class="col-1">
+        <h2>AANTAL</h2>
+    </div>
+    <div class="col-2">
+        <h2>TOTAAL</h2>
+    </div>
+</div>
+<hr />
+
+{% for row in rows %}
+    <div class="row" id="cart-body">
+        {% for key, column in row.columns %}
+            {% if key == "field_image" %}
+                <div class="col-2">
+                    {% for content in column.content %}
+                      {{ content }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if key == "purchased_entity" %}
+                <div class="col-3">
+                    {% for content in column.content %}
+                      <h3>{{ content }}</h3>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if key == "attribute_formaat" %}
+                <div class="col-2">
+                    {% for content in column.content %}
+                      {{ content }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if key == "unit_price__number" %}
+                <div class="col-1">
+                    {% for content in column.content %}
+                      <p>{{ content }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if key == "edit_quantity" %}
+                <div class="col-1">
+                    {% for content in column.content %}
+                      {{ content }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if key == "total_price__number" %}
+                <div class="col-2">
+                    {% for content in column.content %}
+                      <p>{{ content }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if key == "remove_button" %}
+                <div class="col-1">
+                    {% for content in column.content %}
+                      {{ content }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endfor %}

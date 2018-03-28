@@ -1,0 +1,117 @@
+/* 	xs < 576px
+	sm 576px
+	md 768px
+	lg 992px
+	xl 1200px */
+@media only screen and (max-width: 1200px) {
+  .vertical-logo {
+    top: 25px;
+    left: 5%; }
+
+  nav {
+    top: 0px;
+    right: 5%; }
+
+  #nav_pages {
+    right: 60px; } }
+@media only screen and (max-width: 992px) {
+  .horizontal-logo {
+    top: 20px !important;
+    width: 150px !important; }
+
+  #nav_pages {
+    right: 60px; }
+    #nav_pages li {
+      margin-right: 0; } }
+
+@media only screen and (max-width: 768px) {
+  header.fixed {
+    height: 60px; }
+
+  .vertical-logo {
+    width: 80px; }
+
+  .horizontal-logo {
+    width: 100px !important;
+    top: 10px !important; }
+
+  nav {
+    right: 0px;
+    top: 5px !important; }
+    nav a {
+      color: black; }
+
+  #nav_user {
+    left: 0px;
+    top: 55px;
+    background-color: #f4f4f4; }
+    #nav_user li {
+      padding: 5px 20px; }
+
+  #nav_pages {
+    left: 0px;
+    top: 135px;
+    background-color: #f4f4f4;
+    width: 100%; }
+
+  #nav_social {
+    left: 0px;
+    top: 325px;
+    background-color: #f4f4f4; }
+    #nav_social li {
+      padding: 0px 10px; }
+
+  header #nav-collapse {
+    color: white; }
+
+  header.fixed #nav-collapse {
+    color: black; }
+
+  /* main {
+  	padding-top: 100px;
+  } */
+  .col-md {
+    margin-bottom: 30px; }
+
+  #shop-detail-nav {
+    padding-top: 0px; }
+
+  #shop-detail-body img {
+    margin-bottom: 20px; }
+
+  #page-404 > div {
+    margin: 100px auto;
+    padding: 20% 5%; }
+
+  .news-detail-entry {
+    margin: 20px 0; } }
+@media only screen and (max-width: 576px) {
+  .vertical-logo {
+    width: 50px; }
+
+  nav {
+    right: 0px;
+    top: 0px; }
+
+  #nav_user {
+    left: 0px;
+    top: 60px;
+    background-color: #f4f4f4; }
+    #nav_user li {
+      padding: 5px 20px; }
+
+  #nav_pages {
+    left: 0px;
+    top: 140px;
+    background-color: #f4f4f4;
+    width: 100%; }
+
+  #nav_social {
+    left: 0px;
+    top: 330px;
+    background-color: #f4f4f4; }
+
+  #main_nieuwsbrief button {
+    right: 13px; } }
+
+/*# sourceMappingURL=responsive.css.map */

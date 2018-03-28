@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('dewittheme/global-styling') }}
+
+<div class="container">
+	<div class="row" id="shop-detail-body">
+		<div class="col-md-6">
+            {{- product.field_image|without('variation_attributes') -}}
+        </div>
+        <div class="col-md-6">
+            <h1><img src="../../sites/default/files/1.svg" class="svg-icons">{{- product.title|without('variation_attributes') -}}</h1>
+            <h2>{{- product.variation_price|without('variation_attributes') -}}</h2>
+            <p>{{- product.field_description|without('variation_attributes') -}}</p>
+            {{- product.variations|without('variation_attributes') -}}
+        </div>
+	</div>
+</div>
