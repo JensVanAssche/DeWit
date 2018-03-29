@@ -1,0 +1,10 @@
+uuid: 141c4d4d-7053-4423-adca-95d7460a2a95
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.suggestie
+label: Suggestie
+targetEntityType: commerce_product
+cache: true

@@ -1,0 +1,9 @@
+uuid: 38fdaffb-6ece-4755-b71f-a9545a4f227d
+langcode: en
+status: true
+dependencies: {  }
+id: title_input
+label: Title/Input
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

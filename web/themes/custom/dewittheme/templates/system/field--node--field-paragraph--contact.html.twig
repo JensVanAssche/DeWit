@@ -41,8 +41,7 @@
 
 {{ attach_library('dewittheme/global-styling') }}
 
-<div class="container">
-	{% for item in items %}
-	  {{ item.content }}
-	{% endfor %}
-</div>
+
+{% for item in items %}
+  {{ item.content }}
+{% endfor %}

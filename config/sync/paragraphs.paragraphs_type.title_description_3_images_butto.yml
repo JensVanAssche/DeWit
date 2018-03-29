@@ -1,0 +1,9 @@
+uuid: 43e6524b-e699-45e8-89c1-23a2dc7073e2
+langcode: en
+status: true
+dependencies: {  }
+id: title_description_3_images_butto
+label: 'Title/Description/3 Images/Button'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

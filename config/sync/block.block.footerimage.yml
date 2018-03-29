@@ -1,0 +1,25 @@
+uuid: 793b2b2b-d46d-47b9-b15c-73b16e61be48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image:18db5c32-827b-4bdb-b42c-f5ec648eda00'
+  module:
+    - block_content
+  theme:
+    - dewittheme
+id: footerimage
+theme: dewittheme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:18db5c32-827b-4bdb-b42c-f5ec648eda00'
+settings:
+  id: 'block_content:18db5c32-827b-4bdb-b42c-f5ec648eda00'
+  label: 'Footer Image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

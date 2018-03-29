@@ -23,6 +23,11 @@
 {{ attach_library('dewittheme/global-styling') }}
 
 <div class="container">
+    <div class="row" id="shop-detail-nav">
+        <div class="col">
+            <a href="/shop"><i class="fas fa-arrow-left"></i> TERUG NAAR SHOP OVERZICHT</a>
+        </div>
+    </div>
 	<div class="row" id="shop-detail-body">
 		<div class="col-md-6">
             {{- product.field_image|without('variation_attributes') -}}

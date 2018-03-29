@@ -1,0 +1,33 @@
+uuid: 7f4761d0-0b67-4334-8588-e184d5fd7a7a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image:92435d14-c062-4d9a-a1f6-aa89564fe856'
+  module:
+    - block_content
+    - node
+  theme:
+    - dewittheme
+id: mapsandimage
+theme: dewittheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:92435d14-c062-4d9a-a1f6-aa89564fe856'
+settings:
+  id: 'block_content:92435d14-c062-4d9a-a1f6-aa89564fe856'
+  label: 'Maps and Image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      contact: contact
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

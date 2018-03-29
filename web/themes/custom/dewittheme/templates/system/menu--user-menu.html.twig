@@ -37,14 +37,22 @@
     {% else %}
       <ul class="navbar-nav mr-auto" id="nav_user">
     {% endif %}
+      <li class="nav-item">
+          <a class="nav-link" href="/user/register"><i class="fas fa-unlock"></i> Login</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/cart"><i class="fas fa-shopping-cart"></i> Winkelmand</a>
+      </li>      
+
+{# 
     {% for item in items %}
       <li class="nav-item">
         {{ link(item.title, item.url, item.attributes.addClass('nav-link')) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
-      </li>
-    {% endfor %}
+      </li> 
+    {% endfor %} #}
     </ul>
   {% endif %}
 {% endmacro %}

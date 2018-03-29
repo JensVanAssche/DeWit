@@ -1,0 +1,22 @@
+uuid: 81ab0cf4-6bca-4669-8625-5cff95fe78ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dewittheme
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: dewittheme_messages
+theme: dewittheme
+region: header
+weight: -11
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

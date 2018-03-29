@@ -1,0 +1,85 @@
+{#
+/**
+ * @file
+ * Default theme implementation for displaying a view as a table.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ *   - class: HTML classes that can be used to style contextually through CSS.
+ * - title : The title of this group of rows.
+ * - header: The table header columns.
+ *   - attributes: Remaining HTML attributes for the element.
+ *   - content: HTML classes to apply to each header cell, indexed by
+ *   the header's key.
+ *   - default_classes: A flag indicating whether default classes should be
+ *     used.
+ * - caption_needed: Is the caption tag needed.
+ * - caption: The caption for this table.
+ * - accessibility_description: Extended description for the table details.
+ * - accessibility_summary: Summary for the table details.
+ * - rows: Table row items. Rows are keyed by row number.
+ *   - attributes: HTML classes to apply to each row.
+ *   - columns: Row column items. Columns are keyed by column number.
+ *     - attributes: HTML classes to apply to each column.
+ *     - content: The column content.
+ *   - default_classes: A flag indicating whether default classes should be
+ *     used.
+ * - responsive: A flag indicating whether table is responsive.
+ * - sticky: A flag indicating whether table header is sticky.
+ *
+ * @see template_preprocess_views_view_table()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<ul>
+    {% for row in rows %}
+        <li class="shop-cart-entry">
+        {% for key, column in row.columns %}
+            {% if key == "title" %}
+                <div>
+                {% for content in column.content %}
+                  <h3>{{ content }}</h3>
+                {% endfor %}
+            {% endif %}
+            {% if key == "total_price__number" %}
+                {% for content in column.content %}
+                  <p>{{ content }}</p>
+                {% endfor %}
+                </div>
+            {% endif %}
+            {% if key == "field_categorie" %}
+                <div>
+                {% for content in column.content %}
+                  <p>{{ content }}</p>
+                {% endfor %}
+            {% endif %}
+            {% if key == "quantity" %}
+                {% for content in column.content %}
+                  <p>{{ content }} item(s)</p>
+                {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        </li>
+    {% endfor %}
+    <hr />
+
+
+    {% for key, column in rows[0].columns %}
+        {% if key == "total_price__number_1" %}
+            {% for content in column.content %}
+                <li>
+                    <p>Verzendkosten</p>
+                    <p>0,00 €</p>
+                </li>
+                <li>
+                    <p>Totaal</p>
+                    <p>{{ content }}</p>
+                </li>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+</ul>

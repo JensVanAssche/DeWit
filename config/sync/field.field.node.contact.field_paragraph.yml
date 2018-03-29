@@ -1,0 +1,87 @@
+uuid: 4b58db80-7d7a-4644-82e8-e0c9e46d8f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.contact
+    - paragraphs.paragraphs_type.adress
+    - paragraphs.paragraphs_type.tel_mail
+    - paragraphs.paragraphs_type.title
+    - paragraphs.paragraphs_type.title_2links
+    - paragraphs.paragraphs_type.wide_image
+  module:
+    - entity_reference_revisions
+id: node.contact.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: contact
+label: Paragraph
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      adress: adress
+      title: title
+      tel_mail: tel_mail
+      wide_image: wide_image
+      title_2links: title_2links
+    target_bundles_drag_drop:
+      date_title:
+        weight: 15
+        enabled: false
+      image_date_title_description_but:
+        weight: 16
+        enabled: false
+      adress:
+        enabled: true
+        weight: 17
+      image_gallery:
+        weight: 17
+        enabled: false
+      image_link_2lists:
+        weight: 18
+        enabled: false
+      image_openinghours:
+        weight: 19
+        enabled: false
+      single_button:
+        weight: 20
+        enabled: false
+      single_image:
+        weight: 21
+        enabled: false
+      single_link:
+        weight: 22
+        enabled: false
+      single_text:
+        weight: 23
+        enabled: false
+      single_title:
+        weight: 24
+        enabled: false
+      title:
+        enabled: true
+        weight: 25
+      title_description_3_images_butto:
+        weight: 26
+        enabled: false
+      title_input:
+        weight: 27
+        enabled: false
+      tel_mail:
+        enabled: true
+        weight: 28
+      wide_image:
+        enabled: true
+        weight: 28
+      title_2links:
+        enabled: true
+        weight: 31
+field_type: entity_reference_revisions

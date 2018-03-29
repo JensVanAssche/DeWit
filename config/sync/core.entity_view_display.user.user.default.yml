@@ -1,0 +1,19 @@
+uuid: a44e3e39-ad8a-4ba6-ad8e-a725425da6f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.commerce_remote_id
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 5
+    region: content
+hidden:
+  commerce_remote_id: true
+  profile_customer: true

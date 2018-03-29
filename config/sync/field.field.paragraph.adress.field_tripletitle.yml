@@ -1,0 +1,19 @@
+uuid: 59d8487c-e0ab-40dc-9704-70c99fef4d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tripletitle
+    - paragraphs.paragraphs_type.adress
+id: paragraph.adress.field_tripletitle
+field_name: field_tripletitle
+entity_type: paragraph
+bundle: adress
+label: TripleTitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

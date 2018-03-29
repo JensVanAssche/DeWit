@@ -1,0 +1,52 @@
+uuid: 39e85057-a853-43c0-842f-78f192278a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.main_contact_form
+    - field.field.contact_message.main_contact_form.field_email
+    - field.field.contact_message.main_contact_form.field_name
+    - field.field.contact_message.main_contact_form.field_phone_number
+id: contact_message.main_contact_form.default
+targetEntityType: contact_message
+bundle: main_contact_form
+mode: default
+content:
+  field_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: Email
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: Naam
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone_number:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: Telefoon
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: 'Typ hier je bericht'
+    region: content
+    third_party_settings: {  }
+hidden:
+  copy: true
+  mail: true
+  name: true
+  preview: true
+  subject: true

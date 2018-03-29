@@ -1,0 +1,28 @@
+uuid: 59746a37-390f-4e55-bbe5-61bee9a17651
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.categorie_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - dewittheme
+id: categorietaxonomytermname
+theme: dewittheme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:categorie_taxonomy_term_name'
+settings:
+  id: 'facet_block:categorie_taxonomy_term_name'
+  label: 'Categorie » Taxonomy term » Name'
+  provider: facets
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /shop
+    negate: false
+    context_mapping: {  }

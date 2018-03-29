@@ -1,0 +1,12 @@
+uuid: 108fc531-1bd6-431c-b2c5-ccb50fdd174d
+langcode: en
+status: true
+dependencies: {  }
+id: main_contact_form
+label: 'Main Contact Form'
+recipients:
+  - jens.va@hotmail.com
+reply: ''
+weight: 0
+message: 'Danku, uw bericht werd succesvol verzonden!'
+redirect: /node/8

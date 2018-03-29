@@ -1,0 +1,9 @@
+uuid: 6d93040b-b4cf-4b86-b40c-2ebfdb142010
+langcode: en
+status: true
+dependencies: {  }
+id: tel_mail
+label: Tel+Mail
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

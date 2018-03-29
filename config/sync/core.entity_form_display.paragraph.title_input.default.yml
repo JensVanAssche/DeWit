@@ -1,0 +1,24 @@
+uuid: 26ac5ef0-3eb5-4c10-a606-b6f71862a029
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_input.field_title
+    - paragraphs.paragraphs_type.title_input
+id: paragraph.title_input.default
+targetEntityType: paragraph
+bundle: title_input
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

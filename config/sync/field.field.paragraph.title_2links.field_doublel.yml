@@ -1,0 +1,23 @@
+uuid: fb6204a3-e779-4796-a7c2-8da5de8bf954
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_doublel
+    - paragraphs.paragraphs_type.title_2links
+  module:
+    - link
+id: paragraph.title_2links.field_doublel
+field_name: field_doublel
+entity_type: paragraph
+bundle: title_2links
+label: DoubleLink
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

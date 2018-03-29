@@ -1,0 +1,18 @@
+uuid: 7efea2e4-11fc-4f50-af52-0d8811dbec95
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.404_page
+  module:
+    - user
+id: node.404_page.teaser
+targetEntityType: node
+bundle: 404_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

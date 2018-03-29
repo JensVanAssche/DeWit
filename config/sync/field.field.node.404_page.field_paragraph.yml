@@ -1,0 +1,75 @@
+uuid: c41cf83e-55bb-4e0f-a441-db09309c691a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.404_page
+    - paragraphs.paragraphs_type.single_button
+    - paragraphs.paragraphs_type.single_title
+  module:
+    - entity_reference_revisions
+id: node.404_page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: 404_page
+label: Paragraph
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      single_button: single_button
+      single_title: single_title
+    target_bundles_drag_drop:
+      date_title:
+        weight: -31
+        enabled: false
+      image_date_title_description_but:
+        weight: -30
+        enabled: false
+      image_gallery:
+        weight: -29
+        enabled: false
+      image_link_2lists:
+        weight: -28
+        enabled: false
+      image_openinghours:
+        weight: -27
+        enabled: false
+      image_title_price_description_bu:
+        weight: -26
+        enabled: false
+      single_button:
+        enabled: true
+        weight: -25
+      single_image:
+        weight: -24
+        enabled: false
+      single_link:
+        weight: -23
+        enabled: false
+      single_text:
+        weight: -22
+        enabled: false
+      single_title:
+        enabled: true
+        weight: -21
+      title:
+        weight: -20
+        enabled: false
+      title_description_3_images_butto:
+        weight: -19
+        enabled: false
+      title_input:
+        weight: -18
+        enabled: false
+      wide_image:
+        weight: -17
+        enabled: false
+field_type: entity_reference_revisions

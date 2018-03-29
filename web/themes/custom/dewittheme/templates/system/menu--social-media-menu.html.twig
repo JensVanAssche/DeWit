@@ -37,6 +37,14 @@
     {% else %}
       <ul class="navbar-nav mr-auto" id="nav_social">
     {% endif %}
+
+    <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/Bakkerij-De-Wit-1390497507936140/"><i class="fab fa-facebook-f"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://www.instagram.com/explore/locations/1031892929/bakkerij-de-wit/?"><i class="fab fa-instagram"></i></a>
+    </li>
+    {#
     {% for item in items %}
       <li class="nav-item">
         {{ link(item.title, item.url, item.attributes.addClass('nav-link')) }}
@@ -44,7 +52,7 @@
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
       </li>
-    {% endfor %}
+    {% endfor %} #}
     </ul>
   {% endif %}
 {% endmacro %}

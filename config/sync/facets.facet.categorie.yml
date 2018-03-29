@@ -1,0 +1,53 @@
+uuid: 07eae53c-e06c-4f77-8b05-692759c8bf61
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.catergorieen
+    - views.view.filter_categorieen
+  module:
+    - search_api
+id: categorie
+name: Categorie
+url_alias: categorie
+weight: 0
+min_count: 1
+show_only_one_result: false
+field_identifier: field_categorie
+facet_source_id: 'search_api:views_page__filter_categorieen__page_1'
+widget:
+  type: links
+  config:
+    soft_limit: 0
+    show_numbers: false
+query_operator: null
+use_hierarchy: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: null
+exclude: null
+only_visible_when_facet_source_is_visible: true
+processor_configs:
+  active_widget_order:
+    processor_id: active_widget_order
+    weights:
+      sort: 20
+    settings: {  }
+  count_widget_order:
+    processor_id: count_widget_order
+    weights:
+      sort: 30
+    settings: {  }
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }
+empty_behavior:
+  behavior: none

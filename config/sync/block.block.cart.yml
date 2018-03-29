@@ -1,0 +1,27 @@
+uuid: 4e335652-907e-4cb8-b215-fac2ca4d36d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - system
+  theme:
+    - dewittheme
+id: cart
+theme: dewittheme
+region: sidebar_second
+weight: -9
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility:
+  request_path:
+    id: request_path
+    pages: /shop
+    negate: false
+    context_mapping: {  }

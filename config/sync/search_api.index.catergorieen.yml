@@ -1,0 +1,97 @@
+uuid: b12b3f73-fe9f-4f10-b72f-35e40ead6882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.field_categorie
+    - search_api.server.server
+  module:
+    - taxonomy
+    - search_api
+    - commerce_product
+id: catergorieen
+name: Catergorieën
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+  name:
+    label: 'Categorie » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_categorie:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_categorie
+      module:
+        - taxonomy
+  field_categorie:
+    label: Categorie
+    datasource_id: 'entity:commerce_product'
+    property_path: field_categorie
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_categorie
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - title
+      - name
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  ignore_character:
+    all_fields: false
+    fields:
+      - title
+      - name
+    ignorable: '[''¿¡!?,.:;]'
+    strip:
+      character_sets:
+        Pc: Pc
+        Pd: Pd
+        Pe: Pe
+        Pf: Pf
+        Pi: Pi
+        Po: Po
+        Ps: Ps
+        Cc: 0
+        Cf: 0
+        Co: 0
+        Mc: 0
+        Me: 0
+        Mn: 0
+        Sc: 0
+        Sk: 0
+        Sm: 0
+        So: 0
+        Zl: 0
+        Zp: 0
+        Zs: 0
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: server

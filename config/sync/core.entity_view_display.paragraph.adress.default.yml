@@ -1,0 +1,21 @@
+uuid: c395fff1-70d1-40bb-8600-7f75f27125a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.adress.field_tripletitle
+    - paragraphs.paragraphs_type.adress
+id: paragraph.adress.default
+targetEntityType: paragraph
+bundle: adress
+mode: default
+content:
+  field_tripletitle:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

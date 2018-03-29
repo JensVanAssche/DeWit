@@ -1,0 +1,24 @@
+uuid: 46dba72e-1191-439a-9226-3c797283cd08
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-menu
+  module:
+    - system
+  theme:
+    - dewittheme
+id: usermenu
+theme: dewittheme
+region: navigation
+weight: -5
+provider: null
+plugin: 'system_menu_block:user-menu'
+settings:
+  id: 'system_menu_block:user-menu'
+  label: 'User menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

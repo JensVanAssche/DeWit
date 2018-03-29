@@ -1,0 +1,21 @@
+uuid: f91f469e-dde1-4e78-bf44-102c42546119
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_doubletitle
+field_name: field_doubletitle
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

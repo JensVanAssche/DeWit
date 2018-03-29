@@ -1,0 +1,33 @@
+uuid: c33b9976-0e7d-4a68-ab2a-aca48277bfdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.date_title.field_date
+    - field.field.paragraph.date_title.field_title
+    - paragraphs.paragraphs_type.date_title
+id: paragraph.date_title.default
+targetEntityType: paragraph
+bundle: date_title
+mode: default
+content:
+  field_date:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

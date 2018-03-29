@@ -1,0 +1,53 @@
+uuid: 078b5876-083e-4646-b845-da1eff59635f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.newspage
+    - paragraphs.paragraphs_type.image_date_title_description_but
+    - paragraphs.paragraphs_type.title
+    - paragraphs.paragraphs_type.wide_image
+  module:
+    - entity_reference_revisions
+id: node.newspage.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: newspage
+label: Paragraph
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_date_title_description_but: image_date_title_description_but
+      title: title
+      wide_image: wide_image
+    target_bundles_drag_drop:
+      image_date_title_description_but:
+        enabled: true
+        weight: -15
+      image_gallery:
+        weight: -14
+        enabled: false
+      image_openinghours:
+        weight: -13
+        enabled: false
+      title_description_3_images_butto:
+        weight: -12
+        enabled: false
+      title:
+        enabled: true
+        weight: -11
+      title_input:
+        weight: -10
+        enabled: false
+      wide_image:
+        enabled: true
+        weight: -9
+field_type: entity_reference_revisions

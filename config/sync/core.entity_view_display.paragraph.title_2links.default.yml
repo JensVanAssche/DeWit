@@ -1,0 +1,36 @@
+uuid: 329a60c2-0939-4450-bab3-76dc43553d00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_2links.field_doublel
+    - field.field.paragraph.title_2links.field_title
+    - paragraphs.paragraphs_type.title_2links
+  module:
+    - link
+id: paragraph.title_2links.default
+targetEntityType: paragraph
+bundle: title_2links
+mode: default
+content:
+  field_doublel:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

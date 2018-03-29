@@ -1,0 +1,30 @@
+uuid: 40306dc4-883e-4aec-843b-4226f04251ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.404_page.field_paragraph
+    - node.type.404_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.404_page.default
+targetEntityType: node
+bundle: 404_page
+mode: default
+content:
+  field_paragraph:
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

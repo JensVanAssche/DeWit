@@ -1,0 +1,64 @@
+uuid: a6d6f1e6-59cd-4354-8981-584e099f1426
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_date_title_description_but.field_button
+    - field.field.paragraph.image_date_title_description_but.field_date
+    - field.field.paragraph.image_date_title_description_but.field_description
+    - field.field.paragraph.image_date_title_description_but.field_image
+    - field.field.paragraph.image_date_title_description_but.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_date_title_description_but
+  module:
+    - image
+    - link
+id: paragraph.image_date_title_description_but.default
+targetEntityType: paragraph
+bundle: image_date_title_description_but
+mode: default
+content:
+  field_button:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_date:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

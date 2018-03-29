@@ -1,0 +1,30 @@
+uuid: e9496fd2-f30d-4323-94bf-340b41b76338
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.newspage.field_paragraph
+    - node.type.newspage
+  module:
+    - entity_reference_revisions
+    - user
+id: node.newspage.default
+targetEntityType: node
+bundle: newspage
+mode: default
+content:
+  field_paragraph:
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

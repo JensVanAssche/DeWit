@@ -1,0 +1,40 @@
+uuid: a2e6ec42-f400-4718-aef8-a18f3a2aa6bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment
+_core:
+  default_config_hash: wwkDVBiXUqSzRifJbb71ajFBklJdNJ_DgS67IF-_qgY
+id: default
+label: Default
+plugin: multistep_default
+configuration:
+  display_checkout_progress: false
+  panes:
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: login
+      weight: 0
+    contact_information:
+      double_entry: false
+      step: order_information
+      weight: 1
+    payment_information:
+      step: order_information
+      weight: 2
+    review:
+      step: review
+      weight: 3
+    payment_process:
+      capture: true
+      step: payment
+      weight: 4
+    completion_message:
+      step: complete
+      weight: 5
+    order_summary:
+      view: commerce_checkout_order_summary
+      step: _sidebar
+      weight: 6

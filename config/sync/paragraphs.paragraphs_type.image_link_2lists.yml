@@ -1,0 +1,9 @@
+uuid: c8edb9ec-f8c2-4e19-a205-c4b57111d48b
+langcode: en
+status: true
+dependencies: {  }
+id: image_link_2lists
+label: Image/Link/2Lists
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

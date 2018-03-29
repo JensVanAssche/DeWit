@@ -1,0 +1,46 @@
+uuid: adf63520-ab52-40f0-ae7a-d20aa1aebd7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.main_contact_form
+    - field.field.contact_message.main_contact_form.field_email
+    - field.field.contact_message.main_contact_form.field_name
+    - field.field.contact_message.main_contact_form.field_phone_number
+id: contact_message.main_contact_form.default
+targetEntityType: contact_message
+bundle: main_contact_form
+mode: default
+content:
+  field_email:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone_number:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  message:
+    type: basic_string
+    weight: 3
+    label: hidden
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

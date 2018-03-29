@@ -1,0 +1,24 @@
+uuid: a61c2dec-82ab-40c7-8191-6ef8c09b3a9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media-menu
+  module:
+    - system
+  theme:
+    - dewittheme
+id: socialmediamenu
+theme: dewittheme
+region: navigation
+weight: -3
+provider: null
+plugin: 'system_menu_block:social-media-menu'
+settings:
+  id: 'system_menu_block:social-media-menu'
+  label: 'Social Media Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

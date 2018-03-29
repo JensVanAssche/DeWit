@@ -1,0 +1,22 @@
+uuid: f457a517-da9d-4757-9bc9-c2a192471621
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - dewittheme
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: dewittheme_powered
+theme: dewittheme
+region: footer
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

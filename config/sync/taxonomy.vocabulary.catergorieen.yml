@@ -1,0 +1,9 @@
+uuid: 344b7876-6fb7-45cd-adbc-474cac1f8622
+langcode: en
+status: true
+dependencies: {  }
+name: Catergorieën
+vid: catergorieen
+description: ''
+hierarchy: 0
+weight: 0

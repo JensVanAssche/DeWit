@@ -1,0 +1,17 @@
+uuid: b2d945d1-822e-45a4-9749-6148bc67fe84
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access cart'
+  - 'access checkout'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'view commerce_product'
+  - 'view media'

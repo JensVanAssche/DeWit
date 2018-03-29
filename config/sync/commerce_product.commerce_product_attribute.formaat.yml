@@ -1,0 +1,7 @@
+uuid: 75763abb-1610-401c-9e2d-e2f1f4312d01
+langcode: en
+status: true
+dependencies: {  }
+id: formaat
+label: Formaat
+elementType: select

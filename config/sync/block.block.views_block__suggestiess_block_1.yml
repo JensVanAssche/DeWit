@@ -1,0 +1,30 @@
+uuid: 884fc239-1597-4db2-a9e3-c58df754740c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.suggestiess
+  module:
+    - system
+    - views
+  theme:
+    - dewittheme
+id: views_block__suggestiess_block_1
+theme: dewittheme
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:suggestiess-block_1'
+settings:
+  id: 'views_block:suggestiess-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/product/*'
+    negate: false
+    context_mapping: {  }

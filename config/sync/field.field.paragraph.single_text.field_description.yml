@@ -1,0 +1,19 @@
+uuid: 690cb50a-2d92-4fa3-996b-b76bc1b761fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.single_text
+id: paragraph.single_text.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: single_text
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

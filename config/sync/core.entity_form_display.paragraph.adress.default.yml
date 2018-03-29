@@ -1,0 +1,24 @@
+uuid: 10af4d9d-d5b4-4a6b-91ff-cec81f269dcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.adress.field_tripletitle
+    - paragraphs.paragraphs_type.adress
+id: paragraph.adress.default
+targetEntityType: paragraph
+bundle: adress
+mode: default
+content:
+  field_tripletitle:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

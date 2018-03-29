@@ -1,0 +1,64 @@
+uuid: e850be58-3ee8-4fa9-bdf9-bbbc39707f6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_openinghours.field_button
+    - field.field.paragraph.image_openinghours.field_description
+    - field.field.paragraph.image_openinghours.field_image
+    - field.field.paragraph.image_openinghours.field_table
+    - field.field.paragraph.image_openinghours.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_openinghours
+  module:
+    - image
+    - link
+id: paragraph.image_openinghours.default
+targetEntityType: paragraph
+bundle: image_openinghours
+mode: default
+content:
+  field_button:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_table:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

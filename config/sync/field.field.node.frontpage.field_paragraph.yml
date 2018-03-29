@@ -1,0 +1,51 @@
+uuid: 889464bd-7602-445f-9636-d9ea0b2b0a23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.frontpage
+    - paragraphs.paragraphs_type.image_gallery
+    - paragraphs.paragraphs_type.image_openinghours
+    - paragraphs.paragraphs_type.title_description_3_images_butto
+    - paragraphs.paragraphs_type.title_input
+    - paragraphs.paragraphs_type.wide_image
+  module:
+    - entity_reference_revisions
+id: node.frontpage.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: frontpage
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_gallery: image_gallery
+      image_openinghours: image_openinghours
+      title_description_3_images_butto: title_description_3_images_butto
+      wide_image: wide_image
+      title_input: title_input
+    target_bundles_drag_drop:
+      image_gallery:
+        enabled: true
+        weight: 5
+      image_openinghours:
+        enabled: true
+        weight: 6
+      title_description_3_images_butto:
+        enabled: true
+        weight: 7
+      wide_image:
+        enabled: true
+        weight: 8
+      title_input:
+        enabled: true
+        weight: 9
+field_type: entity_reference_revisions

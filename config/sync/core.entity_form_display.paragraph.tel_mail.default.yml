@@ -1,0 +1,24 @@
+uuid: feb1e197-00ca-4a85-a80e-6288494dd50c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tel_mail.field_doubletitle
+    - paragraphs.paragraphs_type.tel_mail
+id: paragraph.tel_mail.default
+targetEntityType: paragraph
+bundle: tel_mail
+mode: default
+content:
+  field_doubletitle:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

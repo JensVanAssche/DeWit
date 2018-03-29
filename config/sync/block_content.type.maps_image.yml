@@ -1,0 +1,8 @@
+uuid: 1430b480-4f8f-4737-9471-a90df69e7af7
+langcode: en
+status: true
+dependencies: {  }
+id: maps_image
+label: 'Maps & Image'
+revision: 0
+description: ''

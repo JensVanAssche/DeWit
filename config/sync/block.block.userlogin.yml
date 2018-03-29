@@ -1,0 +1,26 @@
+uuid: eaae8268-5fc4-49d2-b91c-298bb4526e20
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - dewittheme
+id: userlogin
+theme: dewittheme
+region: sidebar_first
+weight: -9
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/register
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: ae262cfa-cbcb-46f2-b8f2-9a58f9ce5471
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Contact
+type: contact
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

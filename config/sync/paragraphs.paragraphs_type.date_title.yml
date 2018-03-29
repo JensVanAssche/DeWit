@@ -1,0 +1,9 @@
+uuid: 9708fcfa-794e-4c3c-8555-e75f51fb56f3
+langcode: en
+status: true
+dependencies: {  }
+id: date_title
+label: Date/Title
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: 95feaafa-3f57-4789-b9a0-19bb9df6c082
+langcode: en
+status: true
+dependencies: {  }
+id: image_date_title_description_but
+label: Image/Date/Title/Description/Button
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+<div id="block-userlogin" role="form">
+	<h1>Inloggen</h1>
+    <img src="../../sites/default/files/orange_underline.png">
+	<form class="user-login-form" data-drupal-selector="user-login-form" action="/user/register?destination=/user/register" method="post" id="user-login-form" accept-charset="UTF-8" data-drupal-form-fields="edit-name--2,edit-pass,edit-submit--2">
+		<div class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name">
+			<input autocorrect="none" autocapitalize="none" spellcheck="false" data-drupal-selector="edit-name" type="text" id="edit-name--2" name="name" value="" size="15" maxlength="60" class="form-text required" required="required" aria-required="true" placeholder="E-mail">
+		</div>
+		<div class="js-form-item form-item js-form-type-password form-item-pass js-form-item-pass">
+			<input data-drupal-selector="edit-pass" type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" required="required" aria-required="true" placeholder="Wachtwoord">
+		</div>
+		<input autocomplete="off" data-drupal-selector="form-jkilqnoy7o5iabjwspvqtfbvo0ltk-fegvq3drirs04" type="hidden" name="form_build_id" value="form-jkiLqnoY7o5IAbJwsPvqtfBvo0Ltk_feGVQ3DrirS04">
+		<input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form">
+		<label>Vul het wachtwoord in dat bij uw e-mailadres hoort</label>
+		<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2">
+			<div class="button">
+				<input data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Inloggen" class="button js-form-submit form-submit">
+			</div>
+		</div>
+	</form>
+	<ul>
+		{# <li><a href="/user/register" title="Create a new user account." class="create-account-link">Create new account</a></li> #}
+		<li><a href="/user/password" title="Send password reset instructions via email." class="request-password-link">Wachtwoord vergeten?</a></li>
+	</ul>
+</div>

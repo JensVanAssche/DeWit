@@ -1,0 +1,9 @@
+uuid: be3cb0bc-e725-4633-bebf-40a4ee9dc31b
+langcode: en
+status: true
+dependencies: {  }
+id: image_openinghours
+label: Image/Openinghours
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

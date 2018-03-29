@@ -1,0 +1,9 @@
+uuid: 6ae5139c-d602-4513-be65-b52ae2d4c219
+langcode: en
+status: true
+dependencies: {  }
+id: single_image
+label: 'Single Image'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
